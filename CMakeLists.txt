@@ -3,9 +3,8 @@ project(libobjecttracker)
 
 find_package(catkin)
 
-# Enable C++11
-# This requires PCL to be compiled with C++11 enabled as well!
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+# Enable C++14 for compatibility with PCL 1.1+.
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 
 ###################################
 ## catkin specific configuration ##
